@@ -250,7 +250,7 @@ export default function ViewPage({
     // Retrieve token from cookie on component mount
     const cookieToken =
       Cookies.get("pm_vft") || Cookies.get(`pm_drs_flag_${router.query.slug}`);
-    const storedEmail = window.localStorage.getItem("papermark.email");
+    const storedEmail = window.localStorage.getItem("classified.email");
     if (cookieToken) {
       setStoredToken(cookieToken);
       if (storedEmail) {
@@ -294,11 +294,11 @@ export default function ViewPage({
           <CustomMetaTag
             favicon={meta.metaFavicon}
             enableBranding={meta.enableCustomMetatag ?? false}
-            title={
-              meta.metaTitle ??
-              `${link?.document?.name} | Powered by Papermark` ??
-              "Document powered by Papermark"
-            }
+                      title={
+            meta.metaTitle ??
+            `${link?.document?.name} | Powered by Classified` ??
+            "Document powered by Classified"
+          }
             description={meta.metaDescription ?? null}
             imageUrl={meta.metaImage ?? null}
             url={meta.metaUrl ?? ""}
@@ -341,8 +341,8 @@ export default function ViewPage({
           enableBranding={meta.enableCustomMetatag ?? false}
           title={
             meta.metaTitle ??
-            `${link?.document?.name} | Powered by Papermark` ??
-            "Document powered by Papermark"
+            `${link?.document?.name} | Powered by Classified` ??
+            "Document powered by Classified"
           }
           description={meta.metaDescription ?? null}
           imageUrl={meta.metaImage ?? null}
@@ -376,11 +376,11 @@ export default function ViewPage({
           <CustomMetaTag
             favicon={meta.metaFavicon}
             enableBranding={meta.enableCustomMetatag ?? false}
-            title={
-              meta.metaTitle ??
-              `${link?.dataroom?.name} | Powered by Papermark` ??
-              "Dataroom powered by Papermark"
-            }
+                      title={
+            meta.metaTitle ??
+            `${link?.dataroom?.name} | Powered by Classified` ??
+            "Dataroom powered by Classified"
+          }
             description={meta.metaDescription ?? null}
             imageUrl={meta.metaImage ?? null}
             url={meta.metaUrl ?? ""}
@@ -424,8 +424,8 @@ export default function ViewPage({
           enableBranding={meta.enableCustomMetatag ?? false}
           title={
             meta.metaTitle ??
-            `${link?.dataroom?.name} | Powered by Papermark` ??
-            "Dataroom powered by Papermark"
+            `${link?.dataroom?.name} | Powered by Classified` ??
+            "Dataroom powered by Classified"
           }
           description={meta.metaDescription ?? null}
           imageUrl={meta.metaImage ?? null}

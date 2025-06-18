@@ -11,10 +11,10 @@ import { ChatMessageActions } from "./chat-message-actions";
 const mapMessageRole = {
   user: { icon: <UserRound />, name: "You" },
   system: { icon: <AlertCircle />, name: "System" },
-  assistant: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
-  function: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
-  data: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
-  tool: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
+  assistant: { icon: <PapermarkSparkle />, name: "Classified Assistant" },
+  function: { icon: <PapermarkSparkle />, name: "Classified Assistant" },
+  data: { icon: <PapermarkSparkle />, name: "Classified Assistant" },
+  tool: { icon: <PapermarkSparkle />, name: "Classified Assistant" },
 };
 
 export interface ChatMessageProps {

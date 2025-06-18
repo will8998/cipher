@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: data.title,
     description: data.description,
     url: data.url,
-    siteName: "Papermark",
+    siteName: "Classified",
     images: [
       {
         url: "/_static/meta-image.png",
@@ -100,7 +100,7 @@ export default async function VerifyInvitationPage({
             <div className="flex flex-col items-center justify-center space-y-3 px-4 py-6 pt-8 text-center sm:px-16">
               <Link href="/">
                 <span className="text-balance text-2xl font-semibold text-gray-800">
-                  Welcome to Papermark
+                  Welcome to Classified by Securemi
                 </span>
               </Link>
               {!isExpired && !isRevoked && (

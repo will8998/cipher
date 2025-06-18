@@ -64,7 +64,7 @@ export default function DataroomDocumentViewPage({
   useEffect(() => {
     // Retrieve token from cookie on component mount
     const cookieToken = Cookies.get(`pm_drs_flag_${router.query.linkId}`);
-    const storedEmail = window.localStorage.getItem("papermark.email");
+    const storedEmail = window.localStorage.getItem("classified.email");
     if (cookieToken) {
       setStoredToken(cookieToken);
       if (storedEmail) {
