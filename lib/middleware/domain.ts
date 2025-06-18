@@ -6,7 +6,19 @@ export default async function DomainMiddleware(req: NextRequest) {
   const path = req.nextUrl.pathname;
   const host = req.headers.get("host");
 
-  // If it's the root path, redirect to dashboard for localhost or production
+  // Skip custom domain processing for localhost and production domain
+  if (host?.includes("localhost") || host?.includes("securemi.xyz")) {
+    // Only redirect root to dashboard, let all other paths work normally
+    if (path === "/") {
+      return NextResponse.redirect(
+        new URL("/dashboard", req.url),
+      );
+    }
+    // For all other paths, let Next.js handle them normally
+    return NextResponse.next();
+  }
+
+  // Handle other specific custom domains with root redirects
   if (path === "/") {
     if (host === "guide.permithealth.com") {
       return NextResponse.redirect(
@@ -23,13 +35,6 @@ export default async function DomainMiddleware(req: NextRequest) {
     if (host === "docs.pashupaticapital.com") {
       return NextResponse.redirect(
         new URL("https://www.pashupaticapital.com/", req.url),
-      );
-    }
-
-    // For localhost or production, redirect to dashboard
-    if (host?.includes("localhost") || host?.includes("classified.securemi.xyz")) {
-      return NextResponse.redirect(
-        new URL("/dashboard", req.url),
       );
     }
 

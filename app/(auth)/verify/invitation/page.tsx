@@ -19,7 +19,7 @@ const data = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://classified.securemi.xyz"),
+  metadataBase: new URL("https://securemi.xyz"),
   title: data.title,
   description: data.description,
   openGraph: {

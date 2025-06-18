@@ -46,12 +46,12 @@ export default function App({
         />
         <meta
           property="og:image"
-          content="https://classified.securemi.xyz/_static/meta-image.png"
+          content="https://securemi.xyz/_static/meta-image.png"
           key="og-image"
         />
         <meta
           property="og:url"
-          content="https://classified.securemi.xyz"
+          content="https://securemi.xyz"
           key="og-url"
         />
         <meta property="og:type" content="website" />
@@ -66,7 +66,7 @@ export default function App({
         />
         <meta
           name="twitter:image"
-          content="https://classified.securemi.xyz/_static/meta-image.png"
+          content="https://securemi.xyz/_static/meta-image.png"
           key="tw-image"
         />
         <link rel="icon" href="/favicon.ico" key="favicon" />

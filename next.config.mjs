@@ -178,7 +178,7 @@ function prepareRemotePatterns() {
     { protocol: "https", hostname: "www.papermark.com" },
     { protocol: "https", hostname: "app.papermark.com" },
     // classified img
-    { protocol: "https", hostname: "classified.securemi.xyz" },
+            { protocol: "https", hostname: "securemi.xyz" },
     { protocol: "https", hostname: "www.securemi.xyz" },
     // useragent img
     { protocol: "https", hostname: "faisalman.github.io" },
