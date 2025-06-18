@@ -41,7 +41,7 @@ export default function DomainSection({
 }) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [isUpgradeModalOpen, setUpgradeModalOpen] = useState(false);
-  const [displayValue, setDisplayValue] = useState<string>("www.securemi.xyz");
+  const [displayValue, setDisplayValue] = useState<string>("securemi.xyz");
   const teamInfo = useTeam();
   const { limits } = useLimits();
 

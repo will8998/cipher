@@ -46,12 +46,12 @@ export default function App({
         />
         <meta
           property="og:image"
-          content="https://www.securemi.xyz/_static/meta-image.png"
+          content="https://securemi.xyz/_static/meta-image.png"
           key="og-image"
         />
         <meta
           property="og:url"
-          content="https://www.securemi.xyz"
+          content="https://securemi.xyz"
           key="og-url"
         />
         <meta property="og:type" content="website" />
@@ -66,7 +66,7 @@ export default function App({
         />
         <meta
           name="twitter:image"
-          content="https://www.securemi.xyz/_static/meta-image.png"
+          content="https://securemi.xyz/_static/meta-image.png"
           key="tw-image"
         />
         <link rel="icon" href="/favicon.ico" key="favicon" />
@@ -75,7 +75,7 @@ export default function App({
         <PostHogCustomProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <PlausibleProvider
-              domain="www.securemi.xyz"
+              domain="securemi.xyz"
               enabled={process.env.NEXT_PUBLIC_VERCEL_ENV === "production"}
             >
               <NuqsAdapter>

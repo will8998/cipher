@@ -7,7 +7,7 @@ export default async function DomainMiddleware(req: NextRequest) {
   const host = req.headers.get("host");
 
   // Skip custom domain processing for localhost and production domain
-  if (host?.includes("localhost") || host?.includes("www.securemi.xyz")) {
+  if (host?.includes("localhost") || host?.includes("securemi.xyz")) {
     // Let Next.js handle all paths normally, including root
     return NextResponse.next();
   }

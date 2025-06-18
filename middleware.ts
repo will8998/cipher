@@ -26,7 +26,7 @@ function isCustomDomain(host: string) {
     (process.env.NODE_ENV !== "development" &&
       !(
         host?.includes("localhost") ||
-        host?.includes("www.securemi.xyz") ||
+        host?.includes("securemi.xyz") ||
         host?.endsWith(".vercel.app")
       ))
   );
