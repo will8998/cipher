@@ -373,7 +373,7 @@ export const convertThreadMessagesToMessages = (
 export function constructMetadata({
   title = "Classified | The Open Source DocSend Alternative",
   description = "Classified is an open-source document sharing alternative to DocSend with built-in engagement analytics and 100% white-labeling.",
-  image = "https://www.papermark.com/_static/meta-image.png",
+  image = "https://classified.securemi.xyz/_static/meta-image.png",
   favicon = "/favicon.ico",
   noIndex = false,
 }: {

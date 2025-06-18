@@ -6,7 +6,7 @@ export default async function DomainMiddleware(req: NextRequest) {
   const path = req.nextUrl.pathname;
   const host = req.headers.get("host");
 
-  // If it's the root path, redirect to papermark.com/home
+  // If it's the root path, redirect to dashboard for localhost or production
   if (path === "/") {
     if (host === "guide.permithealth.com") {
       return NextResponse.redirect(
@@ -26,9 +26,15 @@ export default async function DomainMiddleware(req: NextRequest) {
       );
     }
 
-    return NextResponse.redirect(
-      new URL("https://www.papermark.com/home", req.url),
-    );
+    // For localhost or production, redirect to dashboard
+    if (host?.includes("localhost") || host?.includes("classified.securemi.xyz")) {
+      return NextResponse.redirect(
+        new URL("/dashboard", req.url),
+      );
+    }
+
+    // Default behavior for other custom domains - continue processing
+    return NextResponse.next();
   }
 
   const url = req.nextUrl.clone();
@@ -47,7 +53,7 @@ export default async function DomainMiddleware(req: NextRequest) {
     headers: {
       "X-Robots-Tag": "noindex",
       "X-Powered-By":
-        "Papermark.io - Document sharing infrastructure for the modern web",
+        "Classified.io - Document sharing infrastructure for the modern web",
     },
   });
 }
