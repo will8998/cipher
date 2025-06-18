@@ -8,9 +8,9 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const data = {
-  description:
-    "Classified is an open-source document sharing infrastructure. Free alternative to Docsend with custom domain. Manage secure document sharing with real-time analytics.",
-  title: "Classified | The Open Source DocSend Alternative",
+      description:
+      "Classified is a secure document sharing platform with advanced analytics. Manage secure document sharing with real-time tracking and custom domains.",
+  title: "Classified | Secure Document Sharing Platform",
   url: "/",
 };
 

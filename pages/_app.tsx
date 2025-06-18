@@ -27,21 +27,21 @@ export default function App({
   return (
     <>
       <Head>
-        <title>Classified | The Open Source DocSend Alternative</title>
+        <title>Classified | Secure Document Sharing Platform</title>
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Classified is an open-source document sharing alternative to DocSend with built-in analytics."
+          content="Classified is a secure document sharing platform with built-in analytics and advanced tracking."
           key="description"
         />
         <meta
           property="og:title"
-          content="Classified | The Open Source DocSend Alternative"
+          content="Classified | Secure Document Sharing Platform"
           key="og-title"
         />
         <meta
           property="og:description"
-          content="Classified is an open-source document sharing alternative to DocSend with built-in analytics."
+          content="Classified is a secure document sharing platform with built-in analytics and advanced tracking."
           key="og-description"
         />
         <meta
@@ -61,7 +61,7 @@ export default function App({
         <meta name="twitter:title" content="Classified" key="tw-title" />
         <meta
           name="twitter:description"
-          content="Classified is an open-source document sharing alternative to DocSend with built-in analytics."
+          content="Classified is a secure document sharing platform with built-in analytics and advanced tracking."
           key="tw-description"
         />
         <meta

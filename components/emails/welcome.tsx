@@ -37,7 +37,7 @@ const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
             </Text>
             <Text className="text-sm">
               My name is Marc, and I&apos;m the creator of Papermark – the
-              open-source DocSend alternative! I&apos;m excited to have you on
+              secure document sharing platform! I&apos;m excited to have you on
               board!
             </Text>
             <Text className="text-sm">

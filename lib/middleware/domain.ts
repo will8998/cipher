@@ -8,13 +8,7 @@ export default async function DomainMiddleware(req: NextRequest) {
 
   // Skip custom domain processing for localhost and production domain
   if (host?.includes("localhost") || host?.includes("securemi.xyz")) {
-    // Only redirect root to dashboard, let all other paths work normally
-    if (path === "/") {
-      return NextResponse.redirect(
-        new URL("/dashboard", req.url),
-      );
-    }
-    // For all other paths, let Next.js handle them normally
+    // Let Next.js handle all paths normally, including root
     return NextResponse.next();
   }
 
@@ -58,7 +52,7 @@ export default async function DomainMiddleware(req: NextRequest) {
     headers: {
       "X-Robots-Tag": "noindex",
       "X-Powered-By":
-        "Classified.io - Document sharing infrastructure for the modern web",
+        "Classified - Secure Document Sharing Platform",
     },
   });
 }
