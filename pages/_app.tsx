@@ -46,18 +46,18 @@ export default function App({
         />
         <meta
           property="og:image"
-          content="https://securemi.xyz/_static/meta-image.png"
+          content="https://www.securemi.xyz/_static/meta-image.png"
           key="og-image"
         />
         <meta
           property="og:url"
-          content="https://securemi.xyz"
+          content="https://www.securemi.xyz"
           key="og-url"
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@papermarkio" />
-        <meta name="twitter:creator" content="@papermarkio" />
+        <meta name="twitter:site" content="@securemiapp" />
+        <meta name="twitter:creator" content="@securemiapp" />
         <meta name="twitter:title" content="Classified" key="tw-title" />
         <meta
           name="twitter:description"
@@ -66,7 +66,7 @@ export default function App({
         />
         <meta
           name="twitter:image"
-          content="https://securemi.xyz/_static/meta-image.png"
+          content="https://www.securemi.xyz/_static/meta-image.png"
           key="tw-image"
         />
         <link rel="icon" href="/favicon.ico" key="favicon" />
@@ -75,7 +75,7 @@ export default function App({
         <PostHogCustomProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <PlausibleProvider
-              domain="securemi.xyz"
+              domain="www.securemi.xyz"
               enabled={process.env.NEXT_PUBLIC_VERCEL_ENV === "production"}
             >
               <NuqsAdapter>

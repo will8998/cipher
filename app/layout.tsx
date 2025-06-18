@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: data.title,
     description: data.description,
-    creator: "@papermarkio",
+    creator: "@securemiapp",
     images: ["/_static/meta-image.png"],
   },
 };
@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <PlausibleProvider
-          domain="securemi.xyz"
+          domain="www.securemi.xyz"
           enabled={process.env.NEXT_PUBLIC_VERCEL_ENV === "production"}
         />
       </head>

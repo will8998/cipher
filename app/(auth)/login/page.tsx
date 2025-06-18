@@ -3,13 +3,13 @@ import { Metadata } from "next";
 import LoginClient from "./page-client";
 
 const data = {
-  description: "Login to Papermark",
-  title: "Login | Papermark",
+  description: "Login to Classified",
+  title: "Login | Classified",
   url: "/login",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://securemi.xyz"),
+  metadataBase: new URL("https://www.securemi.xyz"),
   title: data.title,
   description: data.description,
   openGraph: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: data.title,
     description: data.description,
-    creator: "@papermarkio",
+    creator: "@securemiapp",
     images: ["/_static/meta-image.png"],
   },
 };

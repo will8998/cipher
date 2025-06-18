@@ -9,7 +9,7 @@ const data = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://securemi.xyz"),
+  metadataBase: new URL("https://www.securemi.xyz"),
   title: data.title,
   description: data.description,
   openGraph: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: data.title,
     description: data.description,
-    creator: "@papermarkio",
+    creator: "@securemiapp",
     images: ["/_static/meta-image.png"],
   },
 };

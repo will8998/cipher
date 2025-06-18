@@ -373,7 +373,7 @@ export const convertThreadMessagesToMessages = (
 export function constructMetadata({
   title = "Classified | Secure Document Sharing Platform",
   description = "Classified is a secure document sharing platform with built-in engagement analytics and advanced tracking capabilities.",
-      image = "https://securemi.xyz/_static/meta-image.png",
+             image = "https://www.securemi.xyz/_static/meta-image.png",
   favicon = "/favicon.ico",
   noIndex = false,
 }: {
@@ -400,7 +400,7 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@papermarkio",
+      creator: "@securemiapp",
     },
     favicon,
     ...(noIndex && {
