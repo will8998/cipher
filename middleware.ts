@@ -81,7 +81,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
   ) {
     const url = req.nextUrl.clone();
     url.pathname = "/404";
-    return NextResponse.rewrite(url, { status: 404 });
+    return NextResponse.rewrite(url);
   }
 
   return NextResponse.next();
