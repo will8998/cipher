@@ -28,6 +28,7 @@ function isCustomDomain(host: string) {
         host?.includes("localhost") ||
         host?.includes("papermark.io") ||
         host?.includes("papermark.com") ||
+        host?.includes("securemi.xyz") ||
         host?.endsWith(".vercel.app")
       ))
   );
@@ -43,7 +44,7 @@ export const config = {
      * 4. /_vercel (Vercel internals)
      * 5. /favicon.ico, /sitemap.xml (static files)
      */
-    "/((?!api/|_next/|_static|vendor|_icons|_vercel|favicon.ico|sitemap.xml).*)",
+    "/((?!api/|_next/|_static|vendor|_icons|_vercel|favicon.ico|sitemap.xml|robots.txt).*)",
   ],
 };
 

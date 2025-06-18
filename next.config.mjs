@@ -8,11 +8,8 @@ const nextConfig = {
   },
   transpilePackages: ["react-syntax-highlighter"],
   skipTrailingSlashRedirect: true,
-  assetPrefix:
-    process.env.NODE_ENV === "production" &&
-    process.env.VERCEL_ENV === "production"
-      ? process.env.NEXT_PUBLIC_BASE_URL
-      : undefined,
+  // Remove assetPrefix to let Next.js serve assets from the same domain
+  // assetPrefix: undefined,
   async redirects() {
     return [
       ...(process.env.NEXT_PUBLIC_APP_BASE_HOST ? [{
